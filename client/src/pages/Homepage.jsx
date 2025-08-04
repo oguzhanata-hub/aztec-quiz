@@ -66,7 +66,7 @@ const Homepage = () => {
         {/* Stats */}
         <div className="mt-10 mx-auto grid grid-cols-3 max-w-md">
           <Stat icon={FaUsers} value="226+" label="Players" />
-          <Stat icon={FaQuestionCircle} value="19" label="Questions" />
+          <Stat icon={FaQuestionCircle} value="30" label="Questions" />
           <Stat icon={FaClock} value="24/7" label="Available" />
         </div>
 
