@@ -16,7 +16,7 @@ const Score = () => {
   useEffect(() => {
     const saveScore = async () => {
       try {
-        await axios.post('http://localhost:3001/api/scores', {
+        await axios.post('https://aztec-quiz.onrender.com/api/scores', {
           username,
           correctAnswers,
           timeTaken,
