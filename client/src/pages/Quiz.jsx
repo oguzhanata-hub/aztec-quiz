@@ -25,7 +25,7 @@ const Quiz = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/api/questions?difficulty=${difficulty}`);
+        const response = await axios.get(`https://aztec-quiz-pro.vercel.app/api/questions?difficulty=${difficulty}`);
         setQuestions(response.data);
       } catch (error) {
         console.error('Error fetching questions:', error);
