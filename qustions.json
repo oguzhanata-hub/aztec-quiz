@@ -1,0 +1,317 @@
+[
+  {
+    "question": "What is the client-side library developed by Aztec that enables a private execution environment?",
+    "options": ["Aztec.js", "NoirJS", "PXE", "Anvil"],
+    "correctAnswer": "PXE",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Aztec Network is ultimately striving to be the first fully decentralized and what else on Ethereum?",
+    "options": [
+      "Gaming platform",
+      "NFT marketplace",
+      "Privacy-preserving L2",
+      "Centralized exchange"
+    ],
+    "correctAnswer": "Privacy-preserving L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Why does Aztec Network not use the Ethereum Virtual Machine (EVM) or Solidity?",
+    "options": [
+      "Because they are too slow.",
+      "Because they are difficult to learn.",
+      "Because they are privacy-leaking.",
+      "Because they are only for gaming applications."
+    ],
+    "correctAnswer": "Because they are privacy-leaking.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a Javascript package from Aztec for building privacy-preserving web applications?",
+    "options": ["Aztec.nr", "Aztec CLI", "NoirJS", "Aztec Node"],
+    "correctAnswer": "NoirJS",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In Aztec's private state management, what is the purpose of 'nullifiers'?",
+    "options": [
+      "To increase transaction fees.",
+      "To prevent duplicate actions and re-reading of notes.",
+      "To make transactions public.",
+      "To enable cross-chain communication."
+    ],
+    "correctAnswer": "To prevent duplicate actions and re-reading of notes.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The Aztec Network is run by a decentralized network of what two main types of operators?",
+    "options": [
+      "Miners and Stakers",
+      "Sequencers and Provers",
+      "Developers and Users",
+      "Oracles and Bridges"
+    ],
+    "correctAnswer": "Sequencers and Provers",
+    "difficulty": "easy"
+  },
+  {
+    "question": "For its public transactions, Aztec relies on an account model similar to which existing blockchain?",
+    "options": [
+      "Bitcoin's UTXO model",
+      "Polkadot's Substrate model",
+      "Cardano's extended UTXO model",
+      "Ethereum's account-based model"
+    ],
+    "correctAnswer": "Ethereum's account-based model",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Noir was created to solve the 'two-brain problem' in ZK circuits, which meant developers previously needed to understand both business logic and what else?",
+    "options": [
+      "User experience design",
+      "Marketing strategies",
+      "Basic cryptography",
+      "Economic incentives"
+    ],
+    "correctAnswer": "Basic cryptography",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is an example use case for Aztec's programmable privacy features?",
+    "options": [
+      "Creating fully transparent public ledgers.",
+      "Building centralized databases for financial institutions.",
+      "On-chain identity and KYC without data disclosure.",
+      "Running traditional Web2 social media platforms."
+    ],
+    "correctAnswer": "On-chain identity and KYC without data disclosure.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Client-side proof generation on Aztec means that sensitive data is primarily kept where?",
+    "options": [
+      "On the centralized server",
+      "On the sequencer node",
+      "On the user's device",
+      "On the Ethereum mainnet"
+    ],
+    "correctAnswer": "On the user's device",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the primary goal of the Aztec Network, as a Layer 2 (L2) on Ethereum?",
+    "options": [
+      "To be a general-purpose zkEVM for horizontal scaling, similar to other L2s.",
+      "To provide programmable privacy by default on a fully decentralized Layer 2.",
+      "To create a new proof-of-work blockchain that only supports private transactions.",
+      "To solely facilitate private payments without enabling cross-application composability."
+    ],
+    "correctAnswer": "To provide programmable privacy by default on a fully decentralized Layer 2.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which programming language, often described as Rust-like, is central to building privacy-preserving applications on Aztec and for zero-knowledge circuits in general?",
+    "options": ["Solidity", "C++", "Noir", "Vyper"],
+    "correctAnswer": "Noir",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is Aztec Network's stance on decentralization regarding its mainnet launch?",
+    "options": [
+      "It plans for progressive decentralization after a period of centralized operation to ensure stability.",
+      "It will launch fully decentralized from day one across all components like sequencers, provers, and governance.",
+      "It prioritizes privacy, even if it means some centralization in the initial phases.",
+      "Only the proving network will be decentralized at launch, while sequencing remains centralized for efficiency."
+    ],
+    "correctAnswer": "It will launch fully decentralized from day one across all components like sequencers, provers, and governance.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How does Aztec handle private state variables, fundamentally distinguishing its architecture from Ethereum's account-based model?",
+    "options": [
+      "It encrypts account-based state in-place within a public Merkle tree, similar to traditional EVMs.",
+      "It uses a modified Ethereum Virtual Machine (EVM) that allows for private storage slots.",
+      "It relies on an append-only data tree containing encrypted UTXOs (Unspent Transaction Outputs) and a separate nullifier tree.",
+      "All state, whether public or private, is managed in a single, transparent Merkle tree for auditability."
+    ],
+    "correctAnswer": "It relies on an append-only data tree containing encrypted UTXOs (Unspent Transaction Outputs) and a separate nullifier tree.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a key benefit of Aztec's client-side proof generation for private functions?",
+    "options": [
+      "It allows sequencers to see all transaction details for efficient batch processing off-chain.",
+      "It centralizes compute requirements, making the network more efficient by offloading work to provers.",
+      "It ensures sensitive data remains on the user's device, enabling privacy and scaling throughput by decentralizing compute requirements.",
+      "It is only used for public transactions to reduce gas costs on Layer 1 (L1)."
+    ],
+    "correctAnswer": "It ensures sensitive data remains on the user's device, enabling privacy and scaling throughput by decentralizing compute requirements.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is a primary focus for the Aztec Public Testnet, especially during its Adversarial Testnet phase?",
+    "options": [
+      "To serve as the final production environment for all applications before the official mainnet launch.",
+      "To allow developers to deploy simple, public-only smart contracts on Ethereum.",
+      "To test the economic incentives for node operators through airdrops and marketing gimmicks.",
+      "To stress-test the network's resilience, identify early issues, and ensure participants work as intended, including simulating network attacks and assessing decentralized governance mechanisms like slashing."
+    ],
+    "correctAnswer": "To stress-test the network's resilience, identify early issues, and ensure participants work as intended, including simulating network attacks and assessing decentralized governance mechanisms like slashing.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What unique capability does Aztec's Account Abstraction provide due to its client-side proof generation?",
+    "options": [
+      "It limits verification logic to simple ECDSA signatures for faster processing.",
+      "It requires all accounts to be Externally Owned Accounts (EOAs) for security.",
+      "It allows for arbitrary verification logic with significant cost optimizations, as complex operations are moved off-chain and only a proof is verified by the sequencer.",
+      "It restricts users to seed phrases as the sole form of account validation, ensuring high security."
+    ],
+    "correctAnswer": "It allows for arbitrary verification logic with significant cost optimizations, as complex operations are moved off-chain and only a proof is verified by the sequencer.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What motivated the development of PLONK, Aztec's initial breakthrough in proving systems?",
+    "options": [
+      "The desire to create a more centralized and expensive proving scheme for on-chain privacy.",
+      "The need to enable progressive decentralization for earlier products like zk.money and Aztec Connect.",
+      "The limitations of the 2018 Aztec Protocol regarding programmability, support for user-level privacy, and high computational/gas costs.",
+      "A strategic decision to align with Ethereum's existing proving systems and EVM compatibility."
+    ],
+    "correctAnswer": "The limitations of the 2018 Aztec Protocol regarding programmability, support for user-level privacy, and high computational/gas costs.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "According to the sources, what is a key distinction between 'vanilla' ZK-rollups (like Scroll, Starknet) and Aztec concerning privacy?",
+    "options": [
+      "Vanilla ZK-rollups provide full user and data privacy by default, whereas Aztec focuses solely on scalability.",
+      "Vanilla ZK-rollups are designed for scalability but do NOT provide privacy, while Aztec explicitly uses Zero-Knowledge Proofs for both scalability AND privacy through client-side processing.",
+      "Aztec relies on proving that the state transition was done correctly by public provers, while vanilla ZK-rollups hide all transaction details.",
+      "Both types of rollups offer the same level of privacy, but Aztec has better marketing strategies."
+    ],
+    "correctAnswer": "Vanilla ZK-rollups are designed for scalability but do NOT provide privacy, while Aztec explicitly uses Zero-Knowledge Proofs for both scalability AND privacy through client-side processing.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary function of the Aztec Sandbox?",
+    "options": [
+      "To serve as Aztec's mainnet production environment for live applications.",
+      "To provide a local developer testnet for building and testing end-to-end applications on Aztec.",
+      "To act as a public blockchain explorer for the Aztec Network, displaying all transactions.",
+      "To manage the decentralized sequencer network in a production environment."
+    ],
+    "correctAnswer": "To provide a local developer testnet for building and testing end-to-end applications on Aztec.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the fundamental architectural reason Aztec Network departs from Ethereum's account-based model and EVM compatibility to achieve smart contract privacy?",
+    "options": [
+      "Aztec uses a modified EVM with private storage opcodes, making it incompatible by design.",
+      "Ethereum's account-based model inherently leaks sensitive information about state variables, functions, and modifications, necessitating an encrypted UTXO and nullifier-based append-only data tree for private state.",
+      "Aztec's privacy is primarily achieved through a complex system of multi-party computation (MPC) that cannot integrate with the EVM.",
+      "The EVM is too slow to process zero-knowledge proofs required for privacy, so Aztec built an entirely new virtual machine from scratch that is not compatible."
+    ],
+    "correctAnswer": "Ethereum's account-based model inherently leaks sensitive information about state variables, functions, and modifications, necessitating an encrypted UTXO and nullifier-based append-only data tree for private state.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Aztec Network's Account Abstraction (AA) is described as 'the most abstract' due to a specific technical design choice. What is this core enabler that allows for arbitrary verification logic with significant cost optimizations, differentiating it from common AA implementations like Ethereum's ERC-4337?",
+    "options": [
+      "Aztec's native AA relies on a specialized L1 precompile for signature verification, bypassing typical gas costs.",
+      "It leverages a dedicated hardware security module (HSM) network that offloads all complex cryptographic computations.",
+      "The transaction validity check is executed client-side, and only a proof of validity is supplied to the sequencer, making the process independent of verification logic complexity and allowing expensive operations to be moved off-chain.",
+      "Aztec enshrines a universal signature standard that allows any account to use a single, highly optimized verification function on-chain."
+    ],
+    "correctAnswer": "The transaction validity check is executed client-side, and only a proof of validity is supplied to the sequencer, making the process independent of verification logic complexity and allowing expensive operations to be moved off-chain.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Aztec emphasizes launching 'fully decentralized from day one' for its mainnet. Beyond general stability, what specific mechanisms are being rigorously tested during the Adversarial Testnet phase to ensure this commitment across its components, and what hypothetical scenario is used to assess its robustness?",
+    "options": [
+      "Testing airdrop distribution for future node operators and evaluating economic models for validator rewards to attract a large user base.",
+      "Simulating mass user adoption and high transaction throughput to optimize block production rates and network latency under heavy load.",
+      "Introducing slashing penalties for malicious or negligent sequencer behavior and assessing a fully decentralized governance mechanism for protocol upgrades, including simulating network attacks to ensure independent recovery even if the core team and servers disappeared (Vitalik's 'walkaway test').",
+      "Benchmarking the speed of client-side proof generation on various mobile devices and browsers to guarantee optimal user experience before mainnet launch."
+    ],
+    "correctAnswer": "Introducing slashing penalties for malicious or negligent sequencer behavior and assessing a fully decentralized governance mechanism for protocol upgrades, including simulating network attacks to ensure independent recovery even if the core team and servers disappeared (Vitalik's 'walkaway test').",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Aztec Labs made the significant decision to rewrite Aztec's core cryptography circuits from C++ to Noir. What was the primary underlying motivation for this rewrite, beyond simply introducing a new language, and what specific challenges of C++ circuit writing did Noir address?",
+    "options": [
+      "Noir offered significantly faster proving speeds compared to C++ libraries, leading to direct performance gains for existing circuits.",
+      "The primary goal was to make Aztec compatible with the Ethereum Virtual Machine, which Noir facilitates more easily than C++.",
+      "Noir's design, as a circuit-writing language, reduces the 'two-brain problem' by abstracting away low-level cryptographic complexities and C++ quirks, making circuit writing safer, simpler, and accessible to a wider developer base, leading to better tooling and tighter stack integration.",
+      "C++ libraries were deemed inherently insecure for zero-knowledge proofs due to a lack of formal verification tools."
+    ],
+    "correctAnswer": "Noir's design, as a circuit-writing language, reduces the 'two-brain problem' by abstracting away low-level cryptographic complexities and C++ quirks, making circuit writing safer, simpler, and accessible to a wider developer base, leading to better tooling and tighter stack integration.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A common misconception in the blockchain space is that all Zero-Knowledge (ZK) Rollups inherently provide privacy by default. According to the sources, what is the crucial distinction between 'vanilla' ZK-rollups (like Scroll, Starknet) and Aztec regarding privacy, and what specific type of ZKP is used by Aztec for privacy?",
+    "options": [
+      "Vanilla ZK-rollups offer full data privacy, while Aztec only provides user identity privacy.",
+      "Both vanilla ZK-rollups and Aztec provide the same level of privacy, but Aztec's marketing emphasizes it more.",
+      "Vanilla ZK-rollups are designed for scalability and do not provide privacy (user, data, or code) because all necessary information is public or derivable, whereas Aztec explicitly uses client-side generated Zero-Knowledge Proofs of Statement for private functions to achieve true privacy in addition to scalability.",
+      "Aztec achieves privacy by encrypting all public inputs before they are submitted to Layer 1, a feature not present in vanilla ZK-rollups."
+    ],
+    "correctAnswer": "Vanilla ZK-rollups are designed for scalability and do not provide privacy (user, data, or code) because all necessary information is public or derivable, whereas Aztec explicitly uses client-side generated Zero-Knowledge Proofs of Statement for private functions to achieve true privacy in addition to scalability.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "The Aztec Sandbox provides a local developer testnet. Which of the following accurately describes a key capability or component of the Sandbox that helps developers manage private state, and what is its relationship to Noir?",
+    "options": [
+      "The Sandbox is a public testnet for live dApp deployment where developers can interact with a shared, persistent global state.",
+      "It includes a built-in 'Privacy Oracle' that automatically encrypts all smart contract data without developer intervention.",
+      "The Sandbox offers a comprehensive suite of tools, including Aztec.nr, a framework extending Noir to provide private smart contract functionality and abstract the complexities of managing UTXOs/notes from developers, making private state management intuitive.",
+      "It primarily serves as a benchmarking tool for comparing the performance of different zero-knowledge proving systems, with no direct smart contract deployment features."
+    ],
+    "correctAnswer": "The Sandbox offers a comprehensive suite of tools, including Aztec.nr, a framework extending Noir to provide private smart contract functionality and abstract the complexities of managing UTXOs/notes from developers, making private state management intuitive.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Aztec's journey involved a significant strategic pivot, including the sunsetting of its earlier products like zk.money and Aztec Connect. What was the core reason for this decision, and what fundamental principle guided the subsequent development of the current Aztec Network architecture?",
+    "options": [
+      "The early products were commercially unsuccessful and lacked sufficient user adoption for private transactions.",
+      "The underlying PLONK proving system proved to be technologically unfeasible for a private network.",
+      "The team discovered a critical cryptographic flaw in the original Aztec Protocol that necessitated a complete overhaul.",
+      "The early products could not be fully decentralized without massive architectural changes, and the team adheres to a 'fully decentralized from day one' philosophy, recognizing that composability across applications was also limited by shared state challenges."
+    ],
+    "correctAnswer": "The early products could not be fully decentralized without massive architectural changes, and the team adheres to a 'fully decentralized from day one' philosophy, recognizing that composability across applications was also limited by shared state challenges.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Aztec smart contracts allow for a blend of private and public state and execution. When a transaction involving both private and public functions is executed on Aztec, what is the precise order of operations, and how does the proof generation differ between these two types of functions?",
+    "options": [
+      "All public functions are executed first by the sequencer, then private functions are executed client-side, with a single combined proof generated at the end by the sequencer.",
+      "The sequencer processes all public transactions first, generates their proofs, and then individually handles each private transaction.",
+      "All private functions are executed in an execution trace on the user's side, a proof of their correct execution is generated client-side (Zero Knowledge Proof of Statement), and then all public functions are executed by the sequencer, with their proof generated by a third party.",
+      "Both private and public functions are executed simultaneously on the Aztec node, and then distinct proofs are sent to Layer 1 for verification."
+    ],
+    "correctAnswer": "All private functions are executed in an execution trace on the user's side, a proof of their correct execution is generated client-side (Zero Knowledge Proof of Statement), and then all public functions are executed by the sequencer, with their proof generated by a third party.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "The Aztec Testnet encountered a challenge with Sybil attacks, which hindered legitimate human node operators from joining the sequencer validator set. How did the Aztec team address this specific problem to allow more verified human operators into the network without compromising privacy or decentralization?",
+    "options": [
+      "They implemented a flat fee for joining the validator set, making it financially prohibitive for bots.",
+      "They transitioned to a centralized whitelist system where only pre-approved entities could run sequencers.",
+      "They integrated ZKPassport, a private identity verification app, which uses client-side ZKPs to allow users to prove they hold a valid ID (e.g., passport NFC chip) without revealing personal information, enabling a dramatically increased daily quota for new sequencers to join the queue.",
+      "They replaced their Proof-of-Stake mechanism with Proof-of-Work to prevent bot participation."
+    ],
+    "correctAnswer": "They integrated ZKPassport, a private identity verification app, which uses client-side ZKPs to allow users to prove they hold a valid ID (e.g., passport NFC chip) without revealing personal information, enabling a dramatically increased daily quota for new sequencers to join the queue.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "PLONK was a 'big breakthrough' not just for Aztec but for the wider blockchain community. What specific, practical benefit did PLONK bring to Aztec that was instrumental in enabling user-level privacy and lower transaction costs, particularly in contrast to earlier proving schemes?",
+    "options": [
+      "PLONK was the first proving system to introduce recursive proofs, enabling infinite scalability for all ZK-rollups.",
+      "It eliminated the need for any trusted setup ceremonies for zero-knowledge proofs entirely.",
+      "PLONK is computationally inexpensive and only requires one universal trusted setup, which allowed for programmable privacy and made it simpler to generate client-side proofs on inexpensive hardware, thereby enabling user-level privacy and lower transaction costs by 'keeping the middleman away.'",
+      "PLONK introduced the concept of 'unconstrained functions,' which significantly reduced the circuit size for public transactions."
+    ],
+    "correctAnswer": "PLONK is computationally inexpensive and only requires one universal trusted setup, which allowed for programmable privacy and made it simpler to generate client-side proofs on inexpensive hardware, thereby enabling user-level privacy and lower transaction costs by 'keeping the middleman away.'",
+    "difficulty": "hard"
+  }
+]
