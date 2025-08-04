@@ -37,7 +37,7 @@ const Score = () => {
   const timeFormatted = new Date((safeTime) * 1000).toISOString().substr(14, 5);
 
   // Build X (formerly Twitter) share URL properly encoded
-  const siteUrl = 'https://aztec-quiz.vercel.app';
+  const siteUrl = 'https://aztec-quiz-pro.vercel.app/';
   const rawText = `I just scored ${correctAnswers ?? 0}/10 (${percentage}%) on the Aztec Quiz!\n\n⏲️ Time taken: ${timeFormatted}\n\nTry it yourself: ${siteUrl}`;
   const params = new URLSearchParams({ text: rawText });
   // Use X's compose endpoint (twitter.com still redirects, but use x.com explicitly as requested)
