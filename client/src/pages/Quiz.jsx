@@ -26,6 +26,7 @@ const Quiz = () => {
     const fetchQuestions = async () => {
       try {
         const response = await axios.get(`https://aztec-quiz.onrender.com/api/questions?difficulty=${difficulty}`);
+        console.log(response.data);
         setQuestions(response.data);
       } catch (error) {
         console.error('Error fetching questions:', error);
@@ -108,7 +109,7 @@ const Quiz = () => {
         >
           <h2 className="text-xl md:text-2xl font-semibold leading-snug text-center mb-6">{currentQ.question}</h2>
           <div className="grid grid-cols-1 gap-3 max-w-2xl mx-auto">
-            {JSON.parse(currentQ.options).map((option, index) => {
+            {currentQ.options.map((option, index) => {
               const isCorrect = option === currentQ.correctAnswer;
               const isSelected = option === selectedAnswer;
 
