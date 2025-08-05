@@ -9,21 +9,21 @@ const seed = async () => {
     await mongoose.connect(MONGODB_URI);
     console.log('Connected to MongoDB for seeding.');
 
-    // Clear existing questions
-    await Question.deleteMany({});
-    console.log('Cleared existing questions.');
+    const questionCount = await Question.countDocuments();
+    if (questionCount === 0) {
+      const questionsData = JSON.parse(fs.readFileSync('../qustions.json', 'utf8'));
 
-    const questionsData = JSON.parse(fs.readFileSync('../qustions.json', 'utf8'));
+      await Question.insertMany(questionsData.map(q => ({
+        question: q.question,
+        options: q.options,
+        correctAnswer: q.correctAnswer,
+        difficulty: q.difficulty,
+      })));
 
-    // Insert new questions
-    await Question.insertMany(questionsData.map(q => ({
-      question: q.question,
-      options: q.options,
-      correctAnswer: q.correctAnswer,
-      difficulty: q.difficulty,
-    })));
-
-    console.log('Database seeded successfully!');
+      console.log('Database seeded successfully!');
+    } else {
+      console.log('Questions already exist in the database. Skipping seeding.');
+    }
   } catch (err) {
     console.error('Error seeding database:', err);
   } finally {
