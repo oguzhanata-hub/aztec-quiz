@@ -1,21 +1,34 @@
-const db = require('./database');
+const mongoose = require('mongoose');
 const fs = require('fs');
+const { Question } = require('./database');
 
-const questions = JSON.parse(fs.readFileSync('../qustions.json', 'utf8'));
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/aztec_quiz';
 
-const seed = () => {
-  db.serialize(() => {
-    const stmt = db.prepare(`
-      INSERT INTO questions (question, options, correctAnswer, difficulty) VALUES (?, ?, ?, ?)
-    `);
+const seed = async () => {
+  try {
+    await mongoose.connect(MONGODB_URI);
+    console.log('Connected to MongoDB for seeding.');
 
-    questions.forEach(q => {
-      stmt.run(q.question, JSON.stringify(q.options), q.correctAnswer, q.difficulty);
-    });
+    // Clear existing questions
+    await Question.deleteMany({});
+    console.log('Cleared existing questions.');
 
-    stmt.finalize();
+    const questionsData = JSON.parse(fs.readFileSync('../qustions.json', 'utf8'));
+
+    // Insert new questions
+    await Question.insertMany(questionsData.map(q => ({
+      question: q.question,
+      options: q.options,
+      correctAnswer: q.correctAnswer,
+      difficulty: q.difficulty,
+    })));
+
     console.log('Database seeded successfully!');
-  });
+  } catch (err) {
+    console.error('Error seeding database:', err);
+  } finally {
+    mongoose.connection.close();
+  }
 };
 
 seed();
